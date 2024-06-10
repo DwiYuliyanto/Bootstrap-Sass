@@ -1,0 +1,164 @@
+@import '_var';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  background-color: $warna1;
+}
+
+@media (max-width: 600px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-menu {
+    display: none;
+    color: $hitam;
+  }
+}
+
+.navbar h1 {
+  font-family:$font1;
+  font-size: 24px;
+  color: lighten(map-get($warna , primary),10%);//menambah kecerahan sebanyak 40%
+}
+
+.navbar h1:hover{
+  $warnad: darken(map-get($warna, primary), 40%);//menurunkan kecerahan sebanyak 40%
+  color: $warnad;
+}
+
+.navbar a {
+  color: map-get($warna , secondary);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: map-get($warna , primary );
+}
+
+.harga{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $kuning;
+}
+
+.des{
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+// Iterasi melalui daftar ukuran font dan warna
+@each $size, $font-size in $font-sizes {
+  p.font-#{$size} {
+    font-size: $font-size;
+    color: map-get($colors, $size);
+    
+    // Kondisi untuk font-weight
+    @if $font-size == 12px{
+      font-weight:lighter;
+    } @else if $font-size == 16px{
+      font-weight: normal;
+    }@else if $font-size == 20px{
+      font-weight:bold;
+    }@else{
+      font-weight: bolder;
+    }
+  }
+}
+
+.card{
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  background-color: $warna2;
+  transform: scale(1.1);
+}
+
+footer{
+  width: 100%;
+}
+
+.navbar-custom {
+  background-color: $warna3;
+}
+.navbar-custom .navbar-brand, .navbar-custom .nav-link, .navbar-custom .navbar-toggler-icon {
+  color: white;
+}
+.navbar-custom .nav-link:hover, .navbar-custom .dropdown-item:hover {
+  background-color: $warna4;
+  color: white;
+}
+.navbar-custom .dropdown-menu {
+  background-color: $warna3;
+}
+.navbar-custom .dropdown-item {
+  color: white;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.review-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review-container, .reviews-display {
+  flex: 1 1 300px; /* Flex grow, shrink and base width */
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container h1, .reviews-display h2 {
+  text-align: center;
+}
+
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#reviewForm label {
+  margin-top: 10px;
+}
+
+#reviewForm input, #reviewForm select, #reviewForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button1 {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button1:hover {
+  background-color: #45a049;
+}
+
+.reviews-display {
+  padding: 20px;
+}
+
+#reviews {
+  margin-top: 10px;
+}

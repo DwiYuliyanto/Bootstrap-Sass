@@ -1,0 +1,30 @@
+$font1:verdana;
+$warna1:rgb(22, 101, 174,0.5);
+$warna2: lightgray;
+$warna3: #007bff;
+$warna4: #0056b3;
+$warna:(
+  primary:#2f00ff,
+  secondary: #1090b6
+);
+$kuning: rgb(187, 171, 0);
+$hitam: black;
+
+$footer-background-color: #6dadaf;
+$footer-text-color: #000000;
+
+// Daftar ukuran font untuk perulangan
+$font-sizes: (
+  small: 12px,
+  medium: 16px,
+  large: 20px,
+  xlarge: 24px
+);
+
+// Daftar warna untuk kondisi
+$colors: (
+  small: #f4e8e8, 
+  medium: #3c453c,
+  large: #0e0e2c, 
+  xlarge: #000000  
+);

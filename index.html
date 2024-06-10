@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.3.0/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- card slider -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+    <link rel="stylesheet" href="customStyle.css">
+
+    <title>Bakso Bimo</title>
+  </head>
+  <body>
+
+  <!--NAVBAR-->
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container-fluid">
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <h1 class="navbar-brand" style="font-family: Verdana;">
+          <a href="#" class="text-decoration-none text-reset">&emsp;BAKSO BIMO</a>
+        </h1>
+        <button class="navbar-toggler bg-biru" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#atas">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slide1">Rekomendasi Makanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slide2">Rekomendasi Minuman</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Daftar Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#makanan">Makanan</a></li>
+                <li><a class="dropdown-item" href="#minuman">Minuman</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gmap">Alamat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Jumbotron -->
+  <section id="atas">
+    <div class="jumbotron jumbotron-fluid text-white text-center py-5 full-height-jumbotron">
+      <div class="container">
+        <h1 class="display-4"><strong>Selamat Datang di website Bakso Bimo</strong></h1>
+        <p class="lead font-med"><strong>Rasa pejabat harga merakyat</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide Card Makanan-->
+  <section id="slide1" class="game-section">
+    <h2 class="line-title">Rekomendasi Makanan</h2>
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/baksourat.jpeg?raw=true);">
+        <div class="item-desc">
+          <h3>Bakso Urat</h3>
+          <p class="harga">Rp. 12.000</p>
+          <p>Berisikan bakso urat besar 1 dan bakso kecil 4 dengan tambahan mi kuning atau putih serta sayuran dan bawang goreng lalu disiram kuah kaldu sapi panas.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/bakso.JPG?raw=true);">
+        <div class="item-desc">
+          <h3>Bakso Spesial</h3>
+          <p class="harga">Rp. 16.000</p>
+          <p>Berisikan 6 bakso kecil dan 1 pangsit isi daging dengan tambahan sambal dan potongan daun bawang lalu disiram dengan kuah kaldu.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/extrim.jpg?raw=true);">
+        <div class="item-desc">
+          <h3>Bakso Extrim</h3>
+          <p class="harga">Rp. 23.000</p>
+          <p>Berisikan satu bakso besar yang berisikan cincang daging sapi didalamnya dengan tambahan sayuran serta diguyur kuah kaldu.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/miayambakso.jpeg?raw=true);">
+        <div class="item-desc">
+          <h3>Mie Ayam Bakso</h3>
+          <p class="harga">Rp. 14.000</p>
+          <p>Berisikan Mie ayam, bakso ayam kecil 2 buah dan pangsit 1 buah dengan tambahan sayuran lalu diguyur minyak dan kuah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide Card Minuman-->
+  <section id="slide2" class="game-section">
+    <h2 class="line-title">Rekomendasi Minuman</h2>
+    <div class="owl-carousel custom-carousel owl-theme">
+      <div class="item active" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/lemontea.jpeg?raw=true);">
+        <div class="item-desc">
+          <h3>Lemon Tea</h3>
+          <p class="harga">Rp. 5.000</p>
+          <p>Perpaduan antara teh dengan lemon dengan tambahan es dalam satu gelas</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/esteh.jpeg?raw=true);">
+        <div class="item-desc">
+          <h3>Es Teh</h3>
+          <p class="harga">Rp. 2.500</p>
+          <p>Segelas teh dengan tambahan es batu.</p>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/esjeruk.jpeg?raw=true);">
+        <div class="item-desc">
+          <h3>Es Jeruk</h3>
+          <p class="harga">Rp. 3.000</p>
+          <p>Perasan jeruk dengan tambahan gula dan air yang dituang kedalam gelas berisi es batu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Makanan-->
+  <!-- baris1 -->
+  <section id="makanan">
+    <div class="container">
+      <h2 class="line-title">Daftar Makanan</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/pedas.jpg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Bakso Ndower</h5>
+                <p class="harga">Rp. 27.000</p>
+                <p class="des">Satu bakso besar dengan isian daging cacah bercampur dengan pedasnya sambal dengan tambahan mi kuning dan sayuran serta bawang goreng lalu diguyur kuah kaldu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/extrim.jpg?raw=true" class="card-img-top" height="200px">
+              <div class="card-body">
+                <h2 class="card-title">Bakso extrim</h5>
+                  <p class="harga">Rp. 23.000</p>
+                  <p class="des">Berisikan satu bakso urat besar yang berisikan cincang daging sapi didalamnya dengan tambahan mi kuning dan sayuran serta diguyur kuah kaldu.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/Baksomahkota.jpg?raw=true" class="card-img-top" height="200px">
+                <div class="card-body">
+                  <h2 class="card-title">Bakso Mahkota</h5>
+                    <p class="harga">Rp. 23.000</p>
+                    <p class="des">Berisikan satu bakso halus besar yang berisikan cincang daging sapi didalamnya dengan tambahan mi kuning sayuran serta diguyur kuah kaldu.</p>
+                  </div>
+                </div>
+              </div>
+          </div><br>
+      <!-- baris2 -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/bakso.JPG?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Bakso Spesial</h5>
+                <p class="harga">Rp. 16.000</p>
+                <p class="des">Berisikan bakso urat, bakso telur dan bakso halus dengan tambahan mie kuning dan sayuran serta bawang goreng lalu diguyur dengan kuah kaldu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/baksotelur.jpg?raw=true" class="card-img-top" height="200px">
+              <div class="card-body">
+                <h2 class="card-title">Bakso Telur</h5>
+                  <p class="harga">Rp. 12.000</p>
+                  <p class="des">Berisikan satu bakso telur sedang dan bakso halus dengan tambahan mie kuning dan sayuran serta bawang goreng lalu diguyur dengan kuah kaldu.</p>
+                </div>
+              </div>
+            </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/baksourat.jpeg?raw=true" class="card-img-top" height="200px">
+              <div class="card-body">
+                <h2 class="card-title">Bakso Urat</h5>
+                  <p class="harga">Rp. 12.000</p>
+                  <p class="des">Berisikan satu bakso urat sedang dan bakso halus dengan tambahan mie kuning dan sayuran serta bawang goreng lalu diguyur dengan kuah kaldu.</p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+      <!-- baris3 -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/miayambakso.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Mie Ayam Bakso</h5>
+              <p class="harga">Rp. 17.000</p>
+              <p class="des">Perpaduan antara mie, ayam dan bakso halus dengan tambahan sayur rebus lengkap dengan bawang goreng lalu diguyur kuah kaldu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/miayam.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Mie Ayam</h5>
+                <p class="harga">Rp. 12.000</p>
+                <p class="des">Perpaduan antara mie yang direbus hingga matang dengan potongan daging ayam serta sayur dan bawang goreng lalu diguyur kuah kaldu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/baksohalus.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Bakso Halus</h5>
+                <p class="harga">Rp. 15.000</p>
+                <p class="des">Berisikan bakso halus kecil dengan tambahan mie kuning dan sayuran serta bawang goreng lalu diguyur kuah kaldu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+  <!-- Card Minuman-->
+  <!-- baris1 -->
+  <section id="minuman">
+    <div class="container">
+      <h2 class="line-title">Daftar Minuman</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/teh.jpg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Es Teh</h5>
+                <p class="harga">Rp. 3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/tehpanas.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Teh Panas</h5>
+                <p class="harga">Rp. 3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/esjeruk.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Es Jeruk</h5>
+                <p class="harga">Rp. 4.000</p>
+            </div>
+          </div>
+        </div>
+      </div><br>
+    <!-- baris2 -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/susuputih.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Es Susu Putih</h5>
+                <p class="harga">Rp. 4.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/susu%20coklat.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Es Susu Coklat</h5>
+                <p class="harga">Rp. 4.000</p>              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/cofeemix.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Coffe Mix</h5>
+                <p class="harga">Rp. 4.000</p>              
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <!-- baris3 -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/whitecofee.jpg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">White Cofee</h5>
+                <p class="harga">Rp. 4.000</p>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/aqua.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Aqua</h5>
+                <p class="harga">Rp. 3.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="https://github.com/DwiYuliyanto/Asset/blob/main/BaksoBimo/lemontea.jpeg?raw=true" class="card-img-top" height="200px">
+            <div class="card-body">
+              <h2 class="card-title">Lemon Tea</h5>
+                <p class="harga">Rp. 5.000</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- ACCORDION -->
+  <section id="accordion" class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="HeadingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <p class="font-medium">Delivery</p>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="HeadingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Pemesanan delivery bisa melalui nomor 089999999999</strong>
+            <p>
+              <a href="https://wa.me/6289999999999">Hubungi Kami di WhatsApp</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="HeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <p class="font-medium">Alamat</p>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="HeadingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Alamat : Jl. Brigjen Wiyono, Penjagalan, Baledono, Kec. Purworejo, Kabupaten Purworejo, Jawa Tengah 54118</strong>
+            <p><a href="https://maps.app.goo.gl/wsyR4i7SWYMLWaYS8">Lokasi Google Map</a></p>
+          </div>
+        </div>
+      </div>
+    </div>              
+  </section><br><br>
+
+  <!-- Review Box -->
+  <section class="container-fluid">
+    <div class="review-section">
+      <div class="review-container">
+        <h1 class="text-center">Berikan Review</h1>
+        <form id="reviewForm">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" autocomplete="on" required>      
+          <p>Rating:</p>
+          
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating"  value="5" required/><label for="star5" title="Excellent">&#9733;</label>
+            <input type="radio" id="star4" name="rating" autocomplete="of" value="4"/><label for="star4" title="Good">&#9733;</label>
+            <input type="radio" id="star3" name="rating" autocomplete="of" value="3"/><label for="star3" title="Average">&#9733;</label>
+            <input type="radio" id="star2" name="rating" autocomplete="of" value="2"/><label for="star2" title="Poor">&#9733;</label>
+            <input type="radio" id="star1" name="rating" autocomplete="of" value="1"/><label for="star1" title="Very Poor">&#9733;</label>
+          </div>
+          
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" rows="4" autocomplete="of" required></textarea>
+          <button class="button1" type="submit">Submit Review</button>
+        </form>
+      </div>
+      <div class="reviews-display">
+        <h2 class="text-center align-text-top">Review</h2>
+        <div id="reviews"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Gmap -->
+  <section class="container-fluid1" id="gmap">
+    <p><strong>Alamat Google Map</strong></p>
+    <iframe 
+    class="container"
+    id="map" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.768836590108!2d110.02084247484339!3d-7.707936692309745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aeb950f78ebed%3A0x7f3a6d4e40fce8cf!2sBakso%20Bimo%20Solo!5e0!3m2!1sid!2sus!4v1717856814950!5m2!1sid!2sus"
+    width="600" 
+    height="450" 
+    frameborder="0" 
+    style="border:0;" 
+    allowfullscreen="" 
+    aria-hidden="false" 
+    tabindex="0">
+    </iframe>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class=" bg-biru text-white text-center py-3 mt-5 w-100">
+    <p class="mb-0">&copy; 2024 Dwi Yuliyanto</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="./bootstrap-5.3.0/dist/js/bootstrap.bundle.js"></script>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+  <script  src="./custom.js"></script>
+  </body>
+</html>
